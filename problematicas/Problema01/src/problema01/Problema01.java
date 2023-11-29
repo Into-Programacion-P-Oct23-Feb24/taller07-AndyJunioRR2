@@ -32,8 +32,8 @@ public class Problema01 {
         double promedioEdad;
         double promedioEstatura;
         String salida;
-        String cadenaA = "Listado de jugadores\n";
-        String cadenaB = "Listado de edades\n";
+        String cadena1 = "Listado de jugadores\n";
+        String cadena2 = "Listado de edades\n";
         boolean bandera = true;
         do {
             System.out.println("Ingrese el nombre de Jugador: ");
@@ -48,16 +48,16 @@ public class Problema01 {
             sumaEdad = sumaEdad + edad;
             sumaEstatura = sumaEstatura + estatura;
             contador = contador + 1;
-            cadenaA = String.format("%s%d. %s -%s-, edad %d, estatura "
+            cadena1 = String.format("%s%d. %s -%s-, edad %d, estatura "
                     + "%.2f\n",
-                    cadenaA,
+                    cadena1,
                     contador,
                     nombre,
                     posicion,
                     edad,
                     estatura);
-            cadenaB = String.format("%s%d\n",
-                    cadenaB,
+            cadena2 = String.format("%s%d\n",
+                    cadena2,
                     edad);
             System.out.println("Ingrese (si) para terminar de ingresar datos"
             );
@@ -71,8 +71,8 @@ public class Problema01 {
         promedioEstatura = sumaEstatura / contador;
         System.out.printf("%s%sPromedio de edades: %.1f\nPromedio de "
                 + "estaturas: %.2f\n",
-                cadenaA,
-                cadenaB,
+                cadena1,
+                cadena2,
                 promedioEdad,
                 promedioEstatura);
             }
